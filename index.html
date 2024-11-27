@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="img">
+        <!-- <img src="backgorund-pic.png" alt="pic"> -->
+    </div>
+    <div class="max-close" style="margin-top:160px;width:800px;margin-left:auto;margin-right:auto;">
+        <div class="close1" style="height:180px;width:220px;">
+            <!-- <span>&times;</span> -->
+            <h3
+                style="color:#fff;margin-left:20px;margin-top:10px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:30px;">
+                Now in <span id="location"></span></h3>
+            <div id="weather-info" style="display:inline-flex;margin-top:-45px;">
+                <h2 id="deg-cent"><span id="temp">0</span>&deg;C</h2>
+                <!-- <h2 id="deg-cent1"><span id="tempF">0</span>&deg;F</h2> -->
+                <div class="cloud"><img src="weather-icon.png" alt="Icon" width="150px" height="150px"
+                        style="margin-top:-40px;margin-left:-10px;"></div><br>
+            </div>
+            <p
+                style="margin-top:-40px;margin-left:20px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px;">
+                <b>Feels like <span id="deg-2"></span><span>&deg;C</span></b>
+            </p>
+        </div>
+
+        <div class="close2" style="height:190px;margin-left:auto;width:300px;text-align:center;margin-top:-185px;">
+            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="temp1"></h3>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px;">
+                Cloud_pct :
+                <span id="precip"></span>%
+            </p>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px;">Humidity
+                : <span id="humid"></span>%</p>
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px;">Wind
+                Speed : <span id="w-speed"></span>km/h</p>
+        </div>
+
+        <div class="weatherCheck" style="display:block;">
+            <h3
+                style="color: #000;text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top:-4px;">
+                Check the weather today</h3>
+            <input type="text" name="weather" id="weatherCheck" placeholder="Input Location">
+            <div class="button" onclick="currentWeather()" id="but-chec">
+                <p>Check</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
